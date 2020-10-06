@@ -1,8 +1,21 @@
-body {
-    color:yellow;
+body{
+    
     background-color:white;
     background-image:url(planette.jpg);
     background-size: cover;
     text-align: center;
 
     }
+
+.tete{
+    /*text-size-adjust: auto ajust la taille du texte selon le support*/
+    text-size-adjust: auto;
+    font-size: 600%;
+    color: tomato;
+}
+
+.nothing{
+    text-size-adjust: auto;
+    font-size: 300%;
+    color: yellowgreen;
+}
