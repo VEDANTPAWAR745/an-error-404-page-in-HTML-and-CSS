@@ -1,7 +1,8 @@
 body{
     
     background-color:white;
-    background-size: cover;
+    width: 800px;
+    height: auto;
     text-align: center;
 
     }
@@ -9,13 +10,13 @@ body{
 .tete{
     /*text-size-adjust: auto ajust la taille du texte selon le support*/
     text-size-adjust: auto;
-    font-size: 600%;
+    font-size: 300%;
     color: tomato;
 }
 
 .nothing{
     text-size-adjust: auto;
-    font-size: 300%;
+    font-size: 150%;
     color: yellowgreen;
 }
 
@@ -25,6 +26,7 @@ a.bouton{
     color: #FFFFFF;
     font-weight: bold;
     font-size: 18px;
+    border-radius: 20px;
 }
 
 a.bouton:hover{
@@ -35,9 +37,9 @@ a.bouton:hover{
 .error{
 
     text-align: center;
-    font-size: 180px;
+    font-size: 80px;
 	font-family: fantasy;
-	font-weight: 800;
+	font-weight: 300;
 	margin: 20px 15px;
 }
 
@@ -78,9 +80,28 @@ a.bouton:hover{
 	animation: rotatedrop 8s infinite;
 }
 
+@keyframes easyoutelastic{
+	0% {
+		transform: rotate(0);
+	}
+	10% {
+		transform: rotate(-30deg);
+	}
+	15% {
+		transform: rotate(-90deg);
+	}
+	70% {
+		transform: rotate(-90deg);
+	}
+	80% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotateX(0);
+	}
+}
 
-
-@keyframes rotatedrop {
+@keyframes rotatedrop{
 	0% {
 		transform: rotate(0);
 	}
